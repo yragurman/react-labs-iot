@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header, Heading1, Paragraph, TextWrapper } from "./Home.styled";
 
-import CardItem from "../components/CardItem/CardItem.js";
-import MoviesOnTV from "../video/MoviesOnTV.mp4";
+import MoviesOnTV from "../../video/MoviesOnTV.mp4";
+
+import CardItem from "./CardItem";
+
+import { Films } from "../films";
+
 function Home() {
+  const [films, setFilms] = useState(Films);
   return (
     <div>
       <Header>
@@ -29,7 +34,12 @@ function Home() {
           </Paragraph>
         </TextWrapper>
       </Header>
-      <CardItem />
+      <h1
+        style={{ display: "flex", justifyContent: "center", marginTop: "10vh" }}
+      >
+        Films:
+      </h1>
+      <CardItem films={films} />
     </div>
   );
 }

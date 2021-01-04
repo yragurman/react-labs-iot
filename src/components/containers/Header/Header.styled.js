@@ -31,17 +31,16 @@ export const Navigation = styled.div`
       color: #fff;
       text-decoration: none;
       border-radius: 10px;
-      padding-right:3vh;
-      padding-left:3vh;
-      }
-    a:active{
-      color:black;
-      background-color:white;
+      padding-right: 3vh;
+      padding-left: 3vh;
     }
-    a:hover{
-      color:black;
-      background-color:white;
+    a:active {
+      color: black;
+      background-color: white;
     }
+    a:hover {
+      color: black;
+      background-color: white;
     }
   }
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Wrapper, LogoWrapper, ImgLogo, Navigation } from "./Header.styled";
-import Logo from "../../image/IMDB_Logo.svg";
+import Logo from "../../../image/IMDB_Logo.svg";
 function Header() {
   return (
     <Wrapper>

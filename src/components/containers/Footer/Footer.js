@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../image/IMDB_Logo.svg";
+import Logo from "../../../image/IMDB_Logo.svg";
 import {
   LogoWrapper,
   ImgLogo,
