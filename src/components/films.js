@@ -10,4 +10,8 @@ export const Films = [
   { image: Image, title: "Film7", description: "VeryNiceFilm7" },
   { image: Image, title: "Film8", description: "VeryNiceFilm8" },
 ];
+<<<<<<< HEAD
 //lr7 branch
+=======
+//checked
+>>>>>>> lr6
