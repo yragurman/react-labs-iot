@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 import Image from "../image/Films_Image.jpg";
 
 export const Films = [
