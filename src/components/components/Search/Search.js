@@ -2,21 +2,27 @@ import React, { useState } from "react";
 
 import { SearchWrapper } from "./Search.styled";
 
-function Search({ films }) {
-  const [input, setInput] = useState("");
-  const handleChange = (e) => {
-    e.preventDefault();
-    setInput(e.target.value);
+function Search(props) {
+  const { onSearch } = props;
+  const [searchText, setSearchText] = useState("");
+  const handleInput = (e) => {
+    const text = e.target.value;
+    setSearchText(text);
   };
-  if (input.length > 0) {
-    films = films.filter((items) => {
-      return items.name.match(input);
-    });
-  }
+  const handleEnterKeyPressed = (e) => {
+    if (e.key === "Enter") {
+      onSearch(searchText);
+    }
+  };
   return (
     <SearchWrapper>
-      <input className="search__input" type="text" placeholder="Search"></input>
-      <button>Seacrh</button>
+      <input
+        onChange={handleInput}
+        onKeyPress={handleEnterKeyPressed}
+        value={searchText}
+        type="text"
+        placeholder="Search"
+      />
     </SearchWrapper>
   );
 }

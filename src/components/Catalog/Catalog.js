@@ -11,7 +11,7 @@ import { Categories, SortBy } from "../components/Filter";
 import Search from "../components/Search";
 import Films from "../films";
 
-import CardItem from "../components/CardItem";
+import CardItemCatalog from "../components/CardItemCatalog";
 
 function Catalog() {
   return (
@@ -25,7 +25,7 @@ function Catalog() {
       </FilterWrapper>
       <h1>Films</h1>
       <FilmsWrapper>
-        <CardItem films={Films} />
+        <CardItemCatalog films={Films} />
       </FilmsWrapper>
     </CatalogWrapper>
   );

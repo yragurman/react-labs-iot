@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Header,
-  ButtonWrapper,
-  Heading1,
-  Paragraph,
-  TextWrapper,
-} from "./Home.styled";
+import { Header, Heading1, Paragraph, TextWrapper } from "./Home.styled";
 
 import MoviesOnTV from "../../video/MoviesOnTV.mp4";
 
