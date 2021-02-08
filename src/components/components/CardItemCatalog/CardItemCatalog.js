@@ -8,7 +8,8 @@ import {
   PriceRateWrapper,
 } from "./CardItemCatalog.styled";
 
-const CardItemCatalog = ({ films }) => {
+const CardItemCatalog = (props) => {
+  const { films } = props;
   return (
     <CardWrapper>
       <ul>
